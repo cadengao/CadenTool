@@ -25,6 +25,11 @@ namespace CadenTool.ViewModels
         {
             _regionManager.Regions["ContentRegion"].RequestNavigate(viewName);
         }
+
+        public void NavigateToDefaultView() // 新增的方法
+        {
+            Navigate("CadenBaseControl");
+        }
     }
 
 }

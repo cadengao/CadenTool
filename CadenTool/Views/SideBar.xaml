@@ -7,8 +7,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <Button Content="我的博客" Command="{Binding NavigateCommand}" CommandParameter="CadenBase"/>
-        <Button Content="生成博客" Command="{Binding NavigateCommand}" CommandParameter="CadenBaseGene"/>
-        <Button Content="设置" Command="{Binding NavigateCommand}" CommandParameter="Setting"/>
+        <Button Content="我的博客" Command="{Binding NavigateCommand}" CommandParameter="CadenBaseControl"/>
+        <Button Content="生成博客" Command="{Binding NavigateCommand}" CommandParameter="CadenBaseGeneControl"/>
+        <Button Content="设置" Command="{Binding NavigateCommand}" CommandParameter="SettingControl"/>
     </StackPanel>
 </UserControl>
