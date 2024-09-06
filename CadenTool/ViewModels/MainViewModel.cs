@@ -1,4 +1,4 @@
-﻿using CadenTool.View;
+﻿using CadenTool.Views;
 using System.Windows.Controls;
 
 namespace CadenTool.ViewModels

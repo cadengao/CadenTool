@@ -1,7 +1,6 @@
 ﻿using CadenTool.Common;
-using CadenTool.View;
+using CadenTool.Views;
 using System.Windows;
-using Prism.Unity;
 
 namespace CadenTool
 {
