@@ -11,7 +11,6 @@ namespace CadenTool.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
         }
     }
 }

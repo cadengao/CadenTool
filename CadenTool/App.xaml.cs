@@ -16,9 +16,9 @@ namespace CadenTool
             containerRegistry.RegisterSingleton<MainWindow>();
 
             //// 如果有其他视图和视图模型也可以在这里注册
-            //containerRegistry.RegisterForNavigation<CadenBaseControl>();
-            //containerRegistry.RegisterForNavigation<CadenBaseGeneControl>();
-            //containerRegistry.RegisterForNavigation<SettingControl>();
+            containerRegistry.RegisterForNavigation<CadenBaseControl>("CadenBase");
+            containerRegistry.RegisterForNavigation<CadenBaseGeneControl>("CadenBaseGene");
+            containerRegistry.RegisterForNavigation<SettingControl>("Setting");
         }
 
         protected override Window CreateShell()

@@ -4,6 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CadenTool" xmlns:view="clr-namespace:CadenTool.Views"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
         mc:Ignorable="d"  
         Title="MainWindow" Height="450" Width="800">
     <DockPanel>
@@ -19,6 +21,6 @@
         </StackPanel>
 
         <!-- ContentControl -->
-        <ContentControl Content="{Binding CurrentView}"/>
+        <ContentControl prism:RegionManager.RegionName="MainViewRegion"/>
     </DockPanel>
 </Window>
