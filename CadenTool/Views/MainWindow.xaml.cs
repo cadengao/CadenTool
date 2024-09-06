@@ -1,7 +1,7 @@
 ﻿using CadenTool.ViewModels;
 using System.Windows;
 
-namespace CadenTool
+namespace CadenTool.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
