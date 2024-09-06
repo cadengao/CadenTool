@@ -15,7 +15,7 @@
 
         <!-- SideBar -->
         <StackPanel DockPanel.Dock="Left" Background="#F9F9F9">
-            <view:SideBar DataContext="{Binding}"/>
+            <view:SideBar/>
         </StackPanel>
 
         <!-- ContentControl -->

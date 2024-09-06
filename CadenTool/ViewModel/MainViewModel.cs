@@ -5,6 +5,8 @@ namespace CadenTool.ViewModel
 {
     public class MainViewModel : BindableBase
     {
+        private Dictionary<string, UserControl> _viewCache = new Dictionary<string, UserControl>();
+
         private UserControl _currentView;
         public UserControl CurrentView
         {
@@ -12,17 +14,36 @@ namespace CadenTool.ViewModel
             set { SetProperty(ref _currentView, value); }
         }
 
-        public DelegateCommand CadenBaseCommand { get; private set; }
-        public DelegateCommand CadenBaseGeneCommand { get; private set; }
-        public DelegateCommand SettingCommand { get; private set; }
+        public DelegateCommand<string> NavigateCommand { get; private set; }
 
         public MainViewModel()
         {
-            CurrentView = new CadenBaseControl();
+            NavigateCommand = new DelegateCommand<string>(Navigate);
+        }
 
-            CadenBaseCommand = new DelegateCommand(() => CurrentView = new CadenBaseControl());
-            CadenBaseGeneCommand = new DelegateCommand(() => CurrentView = new CadenBaseGeneControl());
-            SettingCommand = new DelegateCommand(() => CurrentView = new SettingControl());
+        private void Navigate(string viewName)
+        {
+            if (!_viewCache.ContainsKey(viewName))
+            {
+                switch (viewName)
+                {
+                    case "CadenBase":
+                        _viewCache[viewName] = new CadenBaseControl();
+                        break;
+                    case "CadenBaseGene":
+                        _viewCache[viewName] = new CadenBaseGeneControl();
+                        break;
+                    case "Setting":
+                        _viewCache[viewName] = new SettingControl();
+                        break;
+                    // 可以添加更多的视图
+                    default:
+                        break;
+                }
+            }
+
+            CurrentView = _viewCache[viewName];
         }
     }
+
 }
