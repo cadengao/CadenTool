@@ -6,6 +6,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel HorizontalAlignment="Left" Margin="5" >
-        <Label Content="小高的知识库"/>
+        <TextBlock Text="{Binding BlogTitle}"/>
+        <TextBlock Text="{Binding BlogSubTitle}"/>
     </StackPanel>
 </UserControl>

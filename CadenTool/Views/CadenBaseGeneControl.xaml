@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel HorizontalAlignment="Left" Margin="5">
-        <Button x:Name="btnPull" Content="拉取语雀云端数据" Margin="5"/>
-        <Button x:Name="btnGeneLocalBlog" Content="生成本地博客" Margin="5"/>
-        <Button x:Name="btnGeneWpBlog" Content="生成本地博客" Margin="5"/>
+        <Button x:Name="btnPull" Content="拉取语雀云端数据" Command="{Binding PullOriginDataFromYQ}" Margin="5"/>
+        <Button x:Name="btnGeneLocalBlog" Content="生成本地博客" Command="{Binding GeneLocalBlogData}" Margin="5"/>
+        <Button x:Name="btnGeneWpBlog" Content="生成本地博客" Command="{Binding GeneWpBlogData}" Margin="5"/>
     </StackPanel>
 </UserControl>
