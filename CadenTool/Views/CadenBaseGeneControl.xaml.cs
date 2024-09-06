@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CadenTool.View
+namespace CadenTool.Views
 {
     /// <summary>
-    /// CadenBaseControl.xaml 的交互逻辑
+    /// CadenBaseGeneControl.xaml 的交互逻辑
     /// </summary>
-    public partial class CadenBaseControl : UserControl
+    public partial class CadenBaseGeneControl : UserControl
     {
-        public CadenBaseControl()
+        public CadenBaseGeneControl()
         {
             InitializeComponent();
         }

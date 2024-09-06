@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CadenTool.View
+namespace CadenTool.Views
 {
     /// <summary>
-    /// SettingControl.xaml 的交互逻辑
+    /// SideBar.xaml 的交互逻辑
     /// </summary>
-    public partial class SettingControl : UserControl
+    public partial class SideBar : UserControl
     {
-        public SettingControl()
+        public SideBar()
         {
             InitializeComponent();
         }

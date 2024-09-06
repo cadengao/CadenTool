@@ -1,7 +1,7 @@
 ﻿using CadenTool.View;
 using System.Windows.Controls;
 
-namespace CadenTool.ViewModel
+namespace CadenTool.ViewModels
 {
     public class MainViewModel : BindableBase
     {
