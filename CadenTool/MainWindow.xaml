@@ -6,8 +6,7 @@
         xmlns:local="clr-namespace:CadenTool" xmlns:view="clr-namespace:CadenTool.Views"
         xmlns:prism="http://prismlibrary.com/"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        mc:Ignorable="d"  
-        Title="MainWindow" Height="450" Width="800">
+        Title="{Binding Title}" mc:Ignorable="d"  Height="450" Width="800">
     <DockPanel>
         <!-- NavBar -->
         <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30" Background="LightSeaGreen">
@@ -21,6 +20,6 @@
         </StackPanel>
 
         <!-- ContentControl -->
-        <ContentControl prism:RegionManager.RegionName="MainViewRegion"/>
+        <ContentControl prism:RegionManager.RegionName="ContentRegion"/>
     </DockPanel>
 </Window>

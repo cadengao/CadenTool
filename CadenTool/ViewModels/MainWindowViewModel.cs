@@ -5,6 +5,13 @@ namespace CadenTool.ViewModels
 {
     public class MainWindowViewModel : BindableBase
     {
+        private string _title = "CadenTool";
+        public string Title
+        {
+            get { return _title; }
+            set { SetProperty(ref _title, value); }
+        }
+        //区域管理
         private readonly IRegionManager _regionManager;
         public DelegateCommand<string> NavigateCommand { get; private set; }
 
@@ -16,7 +23,7 @@ namespace CadenTool.ViewModels
 
         private void Navigate(string viewName)
         {
-            _regionManager.Regions["MainViewRegion"].RequestNavigate(viewName);
+            _regionManager.Regions["ContentRegion"].RequestNavigate(viewName);
         }
     }
 
