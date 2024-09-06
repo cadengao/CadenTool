@@ -1,0 +1,10 @@
+﻿<prism:PrismApplication x:Class="CadenTool.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:CadenTool"
+             xmlns:prism="http://prismlibrary.com/">
+    <Application.Resources>
+        <!-- 这里可以声明一些全局资源 -->
+
+    </Application.Resources>
+</prism:PrismApplication>

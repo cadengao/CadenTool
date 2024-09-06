@@ -1,0 +1,24 @@
+﻿<Window x:Class="CadenTool.MainWindow" WindowStartupLocation="CenterScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CadenTool" xmlns:view="clr-namespace:CadenTool.View"
+        mc:Ignorable="d"  
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+        <!-- NavBar -->
+        <StackPanel DockPanel.Dock="Top" Orientation="Horizontal" Height="30" Background="LightSeaGreen">
+            <!-- Your NavBar content here -->
+            <TextBlock Text="导航栏"/>
+        </StackPanel>
+
+        <!-- SideBar -->
+        <StackPanel DockPanel.Dock="Left" Background="#F9F9F9">
+            <view:SideBar DataContext="{Binding}"/>
+        </StackPanel>
+
+        <!-- ContentControl -->
+        <ContentControl Content="{Binding CurrentView}"/>
+    </DockPanel>
+</Window>
